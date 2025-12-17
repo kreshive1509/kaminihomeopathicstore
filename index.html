@@ -15,7 +15,7 @@
 const l=()=>{const i=new Date().getHours();return i<12?"Good Morning":i<18?"Good Afternoon":"Good Evening"};document.querySelector("#app").innerHTML=`
   <header>
     <div class="logo-container">
-      <img src="/logo.png" alt="Kamini Homeopathic Store Logo" class="logo">
+      <img src="logo.png" alt="Kamini Homeopathic Store Logo" class="logo">
     </div>
     <div class="center-content">
       <h1>Kamini Homeopathic Store</h1>
@@ -71,4 +71,5 @@ const l=()=>{const i=new Date().getHours();return i<12?"Good Morning":i<18?"Good
 `;const h=Date.now();function r(){const i=Date.now()-h,o=Math.floor(i/36e5),s=Math.floor(i%36e5/6e4),n=Math.floor(i%6e4/1e3);document.getElementById("time-spent").textContent=`Time on site: ${o}h ${s}m ${n}s`}r();setInterval(r,1e3);
     </script>
   </body>
+
 </html>
